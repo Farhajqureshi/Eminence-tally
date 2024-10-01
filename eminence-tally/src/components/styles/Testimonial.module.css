@@ -1,0 +1,42 @@
+.ceoContainer {
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+}
+
+.imgOne{
+  width: 300px;
+}
+
+.imgOne {
+  transition: all 0.3s;
+}
+
+.imgOne:hover {
+  transform: scale(1.5);
+}
+
+.ceoChildContainer {
+  width: 100%;
+  display: flex;
+}
+
+.about{
+  letter-spacing: 1.8px;
+}
+
+@media (min-width: 650px) and (max-width: 1200px) {
+    .imgOne {
+        margin-top: 50px;
+        width: 10rem;
+        height: auto;
+      }
+}
+
+@media only screen and (max-width: 650px) {
+  .imgOne {
+    margin-top: 50px;
+    width: 15rem;
+    height: auto;
+  }
+}

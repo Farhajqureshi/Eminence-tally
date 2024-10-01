@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.containerBox {
+  margin-top: 100px;
+  display: flex;
+}
+
+.containerBox p {
+  letter-spacing: 2px;
+}
+
+.containerImg {
+  display: flex;
+  justify-content: end;
+}
+
+.containerImg{
+  transition: all 0.3s;
+}
+
+.containerImg:hover{
+  transform: scale(1.15);
+}
+
+
+
+.containerImgs img {
+  width: 30rem;
+  height: auto;
+}
+
+/* midum screen Device   */
+@media (min-width: 650px) and (max-width: 1200px) {
+  .containerBox {
+    flex-direction: column;
+    margin-top: 40rem;
+  }
+
+  .containerImg {
+    flex-direction: column;
+  }
+
+  .containerImgOne {
+    margin-top: 30px;
+  }
+}
+
+/* small Screen Device Css  */
+@media only screen and (max-width: 650px) {
+  .containerImg {
+    flex-direction: column;
+  }
+
+  .containerImgOne {
+    margin-top: 30px;
+  }
+}

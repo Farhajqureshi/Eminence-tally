@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+.contentLending {
+  width: 100%;
+  height: 40rem;
+  margin-top: 50px;
+  display: flex;
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+
+.buton {
+  width: 150px;
+}
+
+.boxone {
+  width: 50%;
+  height: 100%;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.boxone p {
+  font-size: 25px;
+}
+
+.boxtow {
+  width: 50%;
+  height: 100%;
+  /* background-color: red; */
+  padding: 10px;
+  display: flex;
+  justify-content: right;
+}
+
+.logoh1 {
+  font-size: 80px;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+}
+
+@media only screen and (max-width: 650px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .contentLending {
+    flex-direction: column;
+    margin-top: 100px;
+    height: 60rem;
+    padding: 0 0;
+    justify-content: center;
+    background-color: white;
+    color: black;
+
+
+  }
+
+  .logoh1 {
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .boxone {
+    width: 100%;
+  }
+
+  .boxtow {
+    width: 100%;
+    position: static;
+  }
+
+  .imgAni {
+    width: 400px;
+    height: 400px;
+    margin-top: 40px;
+    padding-left: 40px;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 1200px) {
+  .contentLending {
+    flex-direction: column;
+    background-color: white;
+    color: black;
+  }
+
+  .boxone {
+    width: 100%;
+  }
+
+  .boxtow {
+    width: 100%;
+  }
+
+  .imgAni {
+    width: 700px;
+    height: 700px;
+    margin-top: 0px;
+  }
+}

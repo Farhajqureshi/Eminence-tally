@@ -1,0 +1,130 @@
+.main {
+  min-height: 60vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: black;
+}
+
+.mainSection{
+  background-color: black;
+  color: white;
+  padding: 100px;
+}
+
+figure {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.gallery {
+  padding: 100px;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-gap: 1rem;
+  width: 120vh
+}
+ 
+.img1{
+    transition: all 0.3s;
+    height: 100%;
+  }
+
+  .img1:hover{
+    transform: scale(1.19);
+    margin: 5px;
+  }
+
+
+
+  .img2{
+    transition: all 0.3s;
+  }
+
+  .img2:hover{
+    transform: scale(1.50);
+    margin: 5px;
+  }
+
+  .img3{
+    transition: all 0.3s;
+  }
+
+  .img3:hover{
+    transform: scale(1.50);
+    margin: 5px;
+  }
+
+
+  .img4{
+    transition: all 0.3s;
+  }
+
+  .img4:hover{
+    transform: scale(1.50);
+    margin: 5px;
+  }
+
+  .img5{
+    transition: all 0.3s;
+  }
+
+  .img5:hover{
+    transform: scale(1.50);
+    margin: 5px;
+  }
+
+
+  .img6{
+    transition: all 0.3s;
+  }
+
+  .img6:hover{
+    transform: scale(1.50);
+    margin: 5px;
+  }
+
+.divOne {
+  grid-area: 1 / 1 / 7 / 7;
+}
+.divTwo {
+  grid-area: 1 / 7 / 4 / 10;
+}
+.divThree {
+  grid-area: 4 / 7 / 7 / 10;
+}
+.divFour {
+  grid-area: 7 / 7 / 10 / 10;
+}
+.divFive {
+  grid-area: 7 / 4 / 10 / 7;
+}
+.divSix {
+  grid-area: 7 / 1 / 10 / 4;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+
+  .mainSection{
+    padding: 20px;
+  }
+
+  .gallery {
+    padding: 0;
+  }
+}
