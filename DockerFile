@@ -1,0 +1,20 @@
+# Step 1: Base image
+FROM node:20
+
+# Step 2: Working directory set karo
+WORKDIR /app
+
+# Step 3: Package files copy karo
+COPY package*.json ./
+
+# Step 4: Dependencies install karo
+RUN npm install
+
+# Step 5: Baaki source code copy karo
+COPY . .
+
+# Step 6: Port expose karo
+EXPOSE 5000
+
+# Step 7: Default command
+CMD ["npm", "start"]
