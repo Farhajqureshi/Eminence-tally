@@ -4,6 +4,7 @@ FROM node:20 AS build
 # Working directory
 WORKDIR /app
 
+
 # Package.json aur lock file copy
 COPY package*.json ./
 
